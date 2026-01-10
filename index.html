@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moinur Rahman | Full-Stack Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-gradient-1"></div>
+        <div class="bg-gradient-2"></div>
+        <div class="bg-gradient-3"></div>
+        <canvas id="particles"></canvas>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-follower" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Progress Bar -->
+    <div class="scroll-progress" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">MR</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link"><span class="nav-text">Home</span><span class="nav-indicator"></span></a></li>
+                <li><a href="#about" class="nav-link"><span class="nav-text">About</span><span class="nav-indicator"></span></a></li>
+                <li><a href="#skills" class="nav-link"><span class="nav-text">Skills</span><span class="nav-indicator"></span></a></li>
+                <li><a href="#experience" class="nav-link"><span class="nav-text">Experience</span><span class="nav-indicator"></span></a></li>
+                <li><a href="#projects" class="nav-link"><span class="nav-text">Projects</span><span class="nav-indicator"></span></a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-text">Contact</span><span class="nav-indicator"></span></a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">Available for opportunities</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">
+                        <span class="name-char" style="--i:0">M</span>
+                        <span class="name-char" style="--i:1">o</span>
+                        <span class="name-char" style="--i:2">i</span>
+                        <span class="name-char" style="--i:3">n</span>
+                        <span class="name-char" style="--i:4">u</span>
+                        <span class="name-char" style="--i:5">r</span>
+                        <span class="name-char name-space">&nbsp;</span>
+                        <span class="name-char" style="--i:6">R</span>
+                        <span class="name-char" style="--i:7">a</span>
+                        <span class="name-char" style="--i:8">h</span>
+                        <span class="name-char" style="--i:9">m</span>
+                        <span class="name-char" style="--i:10">a</span>
+                        <span class="name-char" style="--i:11">n</span>
+                    </span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor-blink"></span>
+                </div>
+                <p class="hero-description">
+                    Crafting exceptional digital experiences through clean code and innovative solutions.
+                    Specialized in building scalable full-stack applications that make a difference.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span class="btn-text">Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        <span class="btn-text">View Projects</span>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/moinur-rahman" target="_blank" class="social-link" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/moinur-rahman-b4104b175/" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:rahmanmoin27@gmail.com" class="social-link" data-tooltip="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+8801733983238" class="social-link" data-tooltip="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-visual">
+                    <div class="visual-circle circle-1"></div>
+                    <div class="visual-circle circle-2"></div>
+                    <div class="visual-circle circle-3"></div>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">developer.js</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Moinur Rahman"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full-Stack Engineer"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-string">"TypeScript"</span>,
+    <span class="code-string">"React"</span>,
+    <span class="code-string">"Node.js"</span>,
+    <span class="code-string">"Python"</span>
+  ],
+  <span class="code-prop">passion</span>: <span class="code-string">"Building great things"</span>,
+  <span class="code-function">build</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Amazing apps"</span>;
+  }
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-bg"></div>
+                        <div class="about-image-content">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="about-border corner-1"></div>
+                        <div class="about-border corner-2"></div>
+                        <div class="about-border corner-3"></div>
+                        <div class="about-border corner-4"></div>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            I'm a passionate <span class="highlight">Full-Stack Engineer</span> with a knack for turning
+                            complex problems into elegant, scalable solutions. My journey in tech has been driven by
+                            curiosity and a relentless pursuit of excellence.
+                        </p>
+                        <p>
+                            Currently working at <span class="highlight">Spectrum Software & Consulting Ltd.</span>,
+                            I've been instrumental in developing <span class="highlight">PrimeBanijjo</span> -
+                            Prime Bank's Trade Finance Solution, where I've automated workflows, integrated banking APIs,
+                            and reduced processing times by over 80%.
+                        </p>
+                        <p>
+                            I hold a B.Sc in Computer Science & Engineering from Chittagong University of Engineering
+                            & Technology. When I'm not coding, you'll find me exploring new technologies,
+                            contributing to open source, or sharing knowledge with the developer community.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="stat-content">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">GitHub Commits</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-card glass-card">
+                        <div class="education-header">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-info">
+                                <h3>B.Sc in Computer Science & Engineering</h3>
+                                <p>Chittagong University of Engineering & Technology</p>
+                                <span class="education-date">January 2018 - July 2023</span>
+                            </div>
+                        </div>
+                        <div class="education-footer">
+                            <div class="education-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    CGPA: 3.14/4.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I Know</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-wrapper">
+                <div class="skills-showcase">
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="category-skills">
+                            <div class="skill-item" data-level="95">
+                                <div class="skill-info">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="90">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="92">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="80">
+                                <div class="skill-info">
+                                    <span class="skill-name">C++</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag" style="--delay: 0s">React.js</span>
+                            <span class="skill-tag" style="--delay: 0.1s">Next.js</span>
+                            <span class="skill-tag" style="--delay: 0.2s">Angular</span>
+                            <span class="skill-tag" style="--delay: 0.3s">HTML5/CSS3</span>
+                            <span class="skill-tag" style="--delay: 0.4s">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag" style="--delay: 0s">Node.js</span>
+                            <span class="skill-tag" style="--delay: 0.1s">Express.js</span>
+                            <span class="skill-tag" style="--delay: 0.2s">Flask</span>
+                            <span class="skill-tag" style="--delay: 0.3s">REST APIs</span>
+                            <span class="skill-tag" style="--delay: 0.4s">GraphQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag" style="--delay: 0s">PostgreSQL</span>
+                            <span class="skill-tag" style="--delay: 0.1s">MongoDB</span>
+                            <span class="skill-tag" style="--delay: 0.2s">Redis</span>
+                            <span class="skill-tag" style="--delay: 0.3s">MinIO</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>DevOps & Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag" style="--delay: 0s">Docker</span>
+                            <span class="skill-tag" style="--delay: 0.1s">Nginx</span>
+                            <span class="skill-tag" style="--delay: 0.2s">Git</span>
+                            <span class="skill-tag" style="--delay: 0.3s">RabbitMQ</span>
+                            <span class="skill-tag" style="--delay: 0.4s">WebSockets</span>
+                            <span class="skill-tag" style="--delay: 0.5s">APISIX</span>
+                            <span class="skill-tag" style="--delay: 0.6s">Playwright</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <div class="dot-inner"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <span class="timeline-date">April 2023 – August 2025</span>
+                            <span class="timeline-status">Current</span>
+                        </div>
+                        <h3 class="timeline-title">Software Engineer</h3>
+                        <h4 class="timeline-company">Spectrum Software & Consulting Ltd.</h4>
+                        <p class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh
+                        </p>
+                        <div class="timeline-project">
+                            <h5>PrimeBanijjo – Prime Bank's Trade Finance Solution</h5>
+                            <ul>
+                                <li>Developed full-stack modules improving system functionality and user experience</li>
+                                <li>Integrated Core Banking System APIs for real-time secure transactions</li>
+                                <li>Automated workflows reducing processing time by <span class="highlight">50%</span></li>
+                                <li>Digitized manual processes, cutting transaction time from <span class="highlight">30 to 5 minutes</span></li>
+                                <li>Implemented role-based authorization and secure API access</li>
+                                <li>Built web crawler using <span class="highlight">Playwright</span> and Flask for data extraction</li>
+                                <li>Deployed applications using Docker and Nginx</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">Express.js</span>
+                            <span class="tech-item">Next.js</span>
+                            <span class="tech-item">PostgreSQL</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/moinur-rahman" target="_blank" class="action-btn">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <span class="action-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AI-Talk</h3>
+                    <p class="project-description">
+                        Microservices-based AI chat application enabling real-time conversations with
+                        multiple AI models including OpenAI and Ollama.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time WebSocket streaming</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Microservices with APISIX</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>File handling & management</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Next.js</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Redis</span>
+                        <span class="tech-badge">RabbitMQ</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/moinur-rahman" target="_blank" class="action-btn">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <span class="action-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Adventure Tour</h3>
+                    <p class="project-description">
+                        Travel platform with user authentication, hotel booking, and tour package
+                        reservations with filtering and reviews.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Admin dashboard</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Booking system</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Email notifications</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Handlebars</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/moinur-rahman" target="_blank" class="action-btn">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <span class="action-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Project Management</h3>
+                    <p class="project-description">
+                        Tool for defining project scope, assigning roles, and tracking tasks with
+                        deadlines and priorities.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Effort estimation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Task tracking</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Timeline predictions</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-title">
+                        <h3>Let's work together!</h3>
+                        <p>I'm always open to discussing new opportunities, creative ideas, or ways to contribute to meaningful projects.</p>
+                    </div>
+                    <div class="contact-items">
+                        <a href="mailto:rahmanmoin27@gmail.com" class="contact-item glass-card">
+                            <div class="item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="item-content">
+                                <span class="item-label">Email</span>
+                                <span class="item-value">rahmanmoin27@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+8801733983238" class="contact-item glass-card">
+                            <div class="item-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="item-content">
+                                <span class="item-label">Phone</span>
+                                <span class="item-value">+88-01733983238</span>
+                            </div>
+                        </a>
+                        <div class="contact-item glass-card">
+                            <div class="item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="item-content">
+                                <span class="item-label">Location</span>
+                                <span class="item-value">Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/moinur-rahman" target="_blank" class="social-card">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/moinur-rahman-b4104b175/" target="_blank" class="social-card">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">MR</span>
+                <p>Building the future, one line of code at a time.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 Moinur Rahman. Crafted with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
