@@ -771,6 +771,70 @@ a {
     display: block;
 }
 
+/* === Certifications === */
+.exp__certs {
+    margin-top: 48px;
+}
+
+.exp__certs-title {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gray-400);
+    margin-bottom: 20px;
+}
+
+.exp__certs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.exp__cert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.exp__cert:hover {
+    border-color: var(--black);
+    transform: translateY(-2px);
+}
+
+.exp__cert h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 4px;
+}
+
+.exp__cert p {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--gray-400);
+}
+
+.exp__cert .fa-external-link-alt {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    .exp__certs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* === Projects Section === */
 .projects {
     padding: 160px 0;
